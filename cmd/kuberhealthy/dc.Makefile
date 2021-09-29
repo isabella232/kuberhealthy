@@ -9,4 +9,4 @@ DOCKERFILE    ?= dc.Dockerfile
 default: build.docker
 
 build.docker:
-	docker build --rm -t ${IMAGE}:${TAG} -f $(DOCKERFILE) --build-arg VERSION=$(VERSION) ../../
+	docker build --rm -t ${IMAGE}:${TAG} -f $(DOCKERFILE) --build-arg VERSION=$(VERSION) .
